@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS Async</title>
+  <link rel="stylesheet" href="./assets/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/custom.css">
+</head>
+
+<body>
+  <header class="container level">
+    <h1 class="title is-1">Weather App</h1>
+  </header>
+  <main class="container">
+    <form action="/" id="findWeather">
+      <div class="field">
+        <label for="location" class="label d-none">Enter Location</label>
+        <div class="control">
+          <input class="input" type="text" name="location" , id="location" , placeholder="Enter Location">
+        </div>
+      </div>
+      <div class="field d-none">
+        <div class="control">
+          <input class="button is-link" type="submit" value="Get Weather">
+        </div>
+      </div>
+    </form>
+    <section class="section card">
+      <p class="title is-4">History</p>
+      <hr>
+      <ul id="WeatherResult" class="card-content">
+      </ul>
+    </section>
+  </main>
+  <footer class="container"></footer>
+  <script src="./assets/js/weather.js"></script>
+</body>
+
+</html>
